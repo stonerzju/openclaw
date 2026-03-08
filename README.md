@@ -1,3 +1,6 @@
+# What's Special
+这个Fork版本的核心修改是去掉一切在开机阶段或者正常运行阶段需要联网的功能，从而运行在一个无法连接互联网的环境下可以继续使用。
+
 # 🦞 OpenClaw — Personal AI Assistant
 
 <p align="center">
