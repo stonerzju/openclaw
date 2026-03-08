@@ -242,7 +242,7 @@ gh release view v2026.3.5.1
 
 ### Step 8: 发布说明
 
-**创建 Release Notes** (GitHub):
+#### 8.1: 创建 GitHub Release Notes
 
 ````markdown
 ## 🦞 OpenClaw Offmode v2026.3.5.1
@@ -284,6 +284,62 @@ npm install
 
 ````
 
+#### 8.2: 更新飞书发布报告
+
+**位置**: 飞书知识库 → 📘 03-MCP 集成 → 📊 技术调研 → Offmode 发布报告
+
+**步骤**:
+1. 打开飞书知识库
+2. 进入 "📘 03-MCP 集成" → "📊 技术调研"
+3. 创建/更新 "Offmode 发布报告" 文档
+4. 填写发布模板 (见下方)
+5. 通知团队成员
+
+**飞书文档模板**:
+
+```markdown
+# 🦞 OpenClaw Offmode 发布报告
+
+## 版本信息
+- **版本号**: 2026.3.5.1
+- **发布日期**: 2026-03-08
+- **基于上游**: OpenClaw v2026.3.5
+- **发布人**: stonerzju
+
+## 变更内容
+### 新增功能
+- [ ] 功能 1
+- [ ] 功能 2
+
+### 修复问题
+- [ ] Bug 1
+- [ ] Bug 2
+
+## 测试情况
+- [ ] macOS 测试通过
+- [ ] Windows 测试通过
+- [ ] Linux 测试通过
+- [ ] Docker 测试通过
+
+## 已知问题
+| 问题 | 影响范围 | 临时方案 | 计划修复版本 |
+|------|----------|----------|--------------|
+| 问题 1 | 低 | 方案 1 | 2026.3.5.2 |
+
+## 相关链接
+- GitHub Release: https://github.com/stonerzju/openclaw/releases/tag/v2026.3.5.1
+- 分支：offmode_2026.3.5
+- 上游仓库：https://github.com/openclaw/openclaw
+
+## 发布检查清单
+- [x] 代码已合并
+- [x] 版本号已更新
+- [x] Tag 已创建并推送
+- [x] GitHub Release 已创建
+- [x] 飞书发布报告已更新 ✅
+- [x] 用户已通知
+````
+
 ---
 
 ## 日常同步
@@ -299,7 +355,7 @@ git pull origin main
 
 # 3. 查看变更
 git log --oneline -10
-````
+```
 
 ### 同步开发分支
 
